@@ -18,6 +18,7 @@ body {
     height: 60vh;
     object-fit: cover;
     display: block;
+    align-items: center;
 }
 
 /* NAVIGATION */
@@ -54,10 +55,16 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 60px 10%;
-    flex-wrap: wrap; /* allows mobile collapse */
+    flex-wrap: wrap; /* allow mobile collapse */
 }
 
-.section img {
+.image-group {
+    display: flex;
+    flex-direction: column; /* stack images vertically */
+    gap: 20px;
+}
+
+.image-group img {
     width: 350px;
     max-width: 100%;
     object-fit: cover;
@@ -70,20 +77,17 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .nav-section {
-        flex-direction: column;
-    }
-
-    .nav-box {
-        width: 85%;
-        padding: 30px 0;
-        font-size: 1.6rem;
-    }
-
     .section {
-        flex-direction: column; /* stack text and images */
+        flex-direction: column; /* stack image-group + text vertically */
         align-items: center;
         text-align: center;
+    }
+
+    .image-group {
+        flex-direction: row; /* optional: images side by side on mobile, or keep column */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
 }
 </style>
@@ -93,7 +97,7 @@ body {
 
 <!-- HEADER -->
 <div class="header">
-    <img src="Obrero 6.png" alt="">
+    <img src="GH Logo.png" alt="">
 </div>
 
 <!-- NAVIGATION -->
@@ -106,10 +110,11 @@ body {
 
 <hr>
 
-<!-- 1997 TELE -->
 <div class="section">
-    <img src="./'97 tele solo.png" alt="">
-    <img src="./'97 tele multi.png" alt="">
+    <div class="image-group">
+        <img src="97-tele-solo.png" alt="">
+        <img src="97-tele-multi.png" alt="">
+    </div>
     <div class="intro">
         <h1>1997 Fender California Series Telecaster</h1>
         <h2>Serial <span style="font-weight:normal">#AMXN721692</span></h2>
