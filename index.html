@@ -14,10 +14,8 @@ body {
 
 /* HEADER */
 .header img {
-    width: 100%;
+    width: 350px;
     height: 60vh;
-    object-fit: cover;
-    display: block;
     align-items: center;
 }
 
@@ -55,41 +53,50 @@ body {
     justify-content: center;
     gap: 40px;
     padding: 60px 10%;
-    flex-wrap: wrap; /* allow mobile collapse */
+    flex-wrap: wrap;   /* allow stacking on small screens */
 }
 
 .image-group {
     display: flex;
     flex-direction: column; /* stack images vertically */
     gap: 20px;
+    flex: 1; /* allow flexbox to distribute space */
 }
 
 .image-group img {
-    width: 350px;
-    max-width: 100%;
+    width: 100%;       /* fill the container */
+    max-width: 350px;  /* never bigger than 350px */
+    height: auto;      /* keep aspect ratio */
     object-fit: cover;
 }
 
 .intro {
-    max-width: 600px;
+    flex: 1;           /* takes remaining space */
+    max-width: 600px;  /* prevents it from being too wide */
     font-size: 115%;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
     .section {
-        flex-direction: column; /* stack image-group + text vertically */
+        flex-direction: column; /* stack image group + text */
         align-items: center;
         text-align: center;
     }
 
     .image-group {
-        flex-direction: row; /* optional: images side by side on mobile, or keep column */
+        flex-direction: row;   /* optional: images side by side on mobile */
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
+
+    .image-group img {
+        max-width: 45%; /* make them smaller on phones */
+    }
 }
+
+    
 </style>
 </head>
 
