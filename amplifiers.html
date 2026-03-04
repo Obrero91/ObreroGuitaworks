@@ -13,9 +13,17 @@ body {
 }
 
 /* HEADER */
+.header {
+    display: flex;               /* make container flex */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically if needed */
+    padding: 20px 0;             /* some vertical spacing */
+}
+
 .header img {
-	align-items: center;
-    width: 350px;
+    width: 200px;                /* adjust to your preferred size */
+    max-width: 90%;              /* responsive on small screens */
+    height: auto;                /* keep aspect ratio */
 }
 
 /* NAVIGATION */
