@@ -57,24 +57,24 @@ body {
 .section {
     display: flex;               /* horizontal layout */
     gap: 20px;                   /* space between images and text */
-    align-items: flex-start;     /* align top of images with text */
+    align-items: flex-start;     /* top-align images and text */
     padding: 40px 0;
+    max-width: 1200px;           /* limits the width of the content */
+    margin: 0 auto;              /* centers the section on the page */
 }
 
-/* container for the two images */
 .image-group {
-    display: flex;               /* images side by side */
+    display: flex;               /* side-by-side images */
     flex-direction: row;
-    gap: 10px;                   /* space between images */
+    gap: 10px;
 }
 
-/* images */
 .image-group img {
-    width: 200px;                /* fixed width, keeps them side by side */
+    width: 250px;                /* fixed width per image */
+    max-width: 100%;             /* responsive */
     object-fit: cover;
 }
 
-/* text next to images */
 .intro {
     flex: 1;                     /* take remaining space */
     font-size: 1.1rem;
