@@ -64,10 +64,14 @@ body {
 }
 
 .image-group img {
-    width: 100%;       /* fill the container */
-    max-width: 350px;  /* never bigger than 350px */
-    height: auto;      /* keep aspect ratio */
-    object-fit: cover;
+    wfloat:left;
+				width: 350px;
+				padding: 100 px;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-around;
+				gap: 10rem;
 }
 
 .intro {
@@ -117,6 +121,7 @@ body {
 
 <hr>
 
+<div style="min-height: 550px; height: flex;">  
 <div class="section">
     <div class="image-group">
         <img src="97-tele-solo.png" alt="">
