@@ -47,29 +47,29 @@ body {
 
 /* SECTION LAYOUT */
 .section {
-    align-items: center;
-	float:left;
-	width: 350px;
-	padding: 100 px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-around;
-	gap: 10rem;
+    display: flex;               /* horizontal layout */
+    gap: 20px;                   /* space between images and text */
+    align-items: flex-start;     /* align top of images with text */
+    padding: 40px 0;
 }
 
-.section img {
-    width: 100%;
-	object-fit: cover;
-	vertical-align: middle;
+/* container for the two images */
+.image-group {
+    display: flex;               /* images side by side */
+    flex-direction: row;
+    gap: 10px;                   /* space between images */
 }
 
+/* images */
+.image-group img {
+    width: 200px;                /* fixed width, keeps them side by side */
+    object-fit: cover;
+}
+
+/* text next to images */
 .intro {
-	font-size: 115%;
-	margin-left: 5px;
-	display: inline-block;
-	padding: 0px;
-	flex:1;
+    flex: 1;                     /* take remaining space */
+    font-size: 1.1rem;
 }
 
 /* MOBILE */
