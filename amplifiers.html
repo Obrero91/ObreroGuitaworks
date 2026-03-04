@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obrero</title>
 
+<style>
+body {
+    margin: 0;
+    font-family: inherit;
+    background-color: white;
+}
+
+/* HEADER */
+.header img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* NAVIGATION */
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.nav-box {
+    text-decoration: none;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.nav-box:hover {
+    background: #444;
+}
+
+/* SECTION LAYOUT */
+.section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+    flex-wrap: wrap; /* allows mobile collapse */
+}
+
+.section img {
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.intro {
+    max-width: 600px;
+    font-size: 115%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .nav-section {
+        flex-direction: column;
+    }
+
+    .nav-box {
+        width: 85%;
+        padding: 30px 0;
+        font-size: 1.6rem;
+    }
+
+    .section {
+        flex-direction: column; /* stack text and images */
+        align-items: center;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <img src="Obrero 6.png" alt="">
+</div>
+
+<!-- NAVIGATION -->
+<div class="nav-section">
+    <a href="index.html" class="nav-box">Guitars</a>
+    <a href="amplifiers.html" class="nav-box">Amplifiers</a>
+    <a href="blog.html" class="nav-box">Blog</a>
+</div>
+
+
+<hr>
+
+<!-- 1997 TELE -->
+<div class="section">
+    <img src="./'97 tele solo.png" alt="">
+    <img src="./'97 tele multi.png" alt="">
+    <div class="intro">
+        <h1>1997 Fender California Series Telecaster</h1>
+        <h2>Serial <span style="font-weight:normal">#AMXN721692</span></h2>
+        <p>
+            - Bridge pickup swap from DiMarzio Hot Rail to Fender Tex-Mex<br>
+            - Truss rod adjustment for added relief<br>
+            - General action and intonation setup
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- 2016 STRAT -->
+<div class="section">
+    <img src="Amer Pro Strat solo.png" alt="">
+    <img src="Amer Pro Strat multi.png" alt="">
+    <div class="intro">
+        <h1>2016 Fender American Professional Stratocaster</h1>
+        <h2>Serial <span style="font-weight:normal">#US16076079</span></h2>
+        <p>
+            - Bridge pickup swap from Fender V-Mod to Seymour Duncan SH-4<br>
+            - Tone pot swap 250k to 500k<br>
+            - Pickguard swap to HSS
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- EPIPHONE SG -->
+<div class="section">
+    <img src="./Epiphone SG solo.png" alt="">
+    <img src="./Epiphone SG multi.png" alt="">
+    <div class="intro">
+        <h1>2024 Epiphone SG Standard</h1>
+        <h2>Serial <span style="font-weight:normal">#24071522631</span></h2>
+        <p>
+            - Seymour Duncan Pearly Gates Neck<br>
+            - Seymour Duncan Pearly Gates Bridge
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- SQUIER JAZZ BASS -->
+<div class="section">
+    <img src="./CV Jazz Bass Solo.png" alt="">
+    <img src="./CV Jazz Bass multi.png" alt="">
+    <div class="intro">
+        <h1>20XX Squier Classic Vibe '70s Jazz Bass</h1>
+        <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
+        <p>
+            - Allparts JMF-BB Replacement Neck<br>
+            - GFS Professional Series Jazz Bass pickups
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- RICKENBACKER -->
+<div class="section">
+    <img src="./'87 Rick solo.png" alt="">
+    <img src="./'87 Rick multi.png" alt="">
+    <div class="intro">
+        <h1>1987 Rickenbacker Model 4003</h1>
+        <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
+        <p>
+            - General setup and inspection<br>
+            - Double truss rod adjustment
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- MIJ TELE -->
+<div class="section">
+    <img src="./Japan Tele Solo.png" alt="">
+    <img src="./Japan Tele multi.png" alt="">
+    <div class="intro">
+        <h1>2013 Fender TL-52 Telecaster Reissue MIJ</h1>
+        <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
+        <p>
+            - Action and intonation adjustment<br>
+            - Vintage truss rod adjustment
+        </p>
+    </div>
+</div>
+
+<hr>
+
+<!-- JAZZMASTER -->
+<div class="section">
+    <img src="./Amer Pro JM solo.png" alt="">
+    <img src="./Amer Pro JM multi.png" alt="">
+    <div class="intro">
+        <h1>2013 Fender American Professional Jazzmaster</h1>
+        <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
+        <p>
+            - Plastic swap<br>
+            - Block inlay sticker installation
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
