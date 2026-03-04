@@ -12,14 +12,15 @@ body {
     background-color: white;
 }
 
-/* Header Image */
+/* HEADER */
 .header img {
     width: 100%;
-    display: block;
+    height: 60vh;
     object-fit: cover;
+    display: block;
 }
 
-/* Navigation */
+/* NAVIGATION */
 .nav-section {
     display: flex;
     justify-content: center;
@@ -46,14 +47,14 @@ body {
     background: #444;
 }
 
-/* Section Layout */
+/* SECTION LAYOUT */
 .section {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 40px;
     padding: 60px 10%;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* allows mobile collapse */
 }
 
 .section img {
@@ -67,9 +68,8 @@ body {
     font-size: 115%;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-
     .nav-section {
         flex-direction: column;
     }
@@ -81,7 +81,7 @@ body {
     }
 
     .section {
-        flex-direction: column;
+        flex-direction: column; /* stack text and images */
         align-items: center;
         text-align: center;
     }
@@ -93,7 +93,7 @@ body {
 
 <!-- HEADER -->
 <div class="header">
-    <img src="./Obrero 6.png" alt="">
+    <img src="Obrero 6.png" alt="">
 </div>
 
 <!-- NAVIGATION -->
@@ -102,6 +102,7 @@ body {
     <a href="amplifiers.html" class="nav-box">Amplifiers</a>
     <a href="blog.html" class="nav-box">Blog</a>
 </div>
+
 
 <hr>
 
