@@ -263,8 +263,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin: 60px 0;
+    gap: 3rem;
+    margin: 80px 0;
     flex-wrap: wrap;
 }
 
@@ -272,12 +272,19 @@
     text-decoration: none;
     background-color: black;
     color: white;
-    padding: 20px 60px;
-    font-size: 1.2rem;
-    font-weight: bold;
+    
+    font-size: 2rem;           /* Bigger text */
+    font-family: inherit;      /* Same font as rest of site */
+    
+    padding: 40px 100px;       /* Bigger button size */
+    
     text-align: center;
+    display: flex;             /* Perfect vertical centering */
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
     transition: 0.3s ease;
-    border-radius: 5px;
 }
 
 .nav-box:hover {
@@ -291,6 +298,8 @@
     }
 
     .nav-box {
-        width: 80%;
+        width: 85%;
+        padding: 40px 0;
+        font-size: 1.8rem;
     }
 }
