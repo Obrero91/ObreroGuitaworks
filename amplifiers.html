@@ -49,12 +49,15 @@ body {
 
 /* SECTION LAYOUT */
 .section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 10%;
-    flex-wrap: wrap; /* allows mobile collapse */
+    align-items: center;
+	float:left;
+	width: 350px;
+	padding: 100 px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	gap: 10rem;
 }
 
 .section img {
@@ -64,8 +67,11 @@ body {
 }
 
 .intro {
-    max-width: 600px;
-    font-size: 115%;
+	font-size: 115%;
+	margin-left: 5px;
+	display: inline-block;
+	padding: 0px;
+	flex:1;
 }
 
 /* MOBILE */
@@ -107,6 +113,7 @@ body {
 <hr>
 
 <!-- 1997 TELE -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
     <img src="./'97 tele solo.png" alt="">
     <img src="./'97 tele multi.png" alt="">
