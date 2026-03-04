@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Obrero</title>
+<title>GH</title>
 
 <style>
 body {
@@ -13,10 +13,17 @@ body {
 }
 
 /* HEADER */
+.header {
+    display: flex;               /* make container flex */
+    justify-content: center;     /* center horizontally */
+    align-items: center;         /* center vertically if needed */
+    padding: 20px 0;             /* some vertical spacing */
+}
+
 .header img {
-    width: 350px;
-    height: 60vh;
-    align-items: center;
+    width: 500px;                /* adjust to your preferred size */
+    max-width: 90%;              /* responsive on small screens */
+    height: auto;                /* keep aspect ratio */
 }
 
 /* NAVIGATION */
@@ -48,59 +55,48 @@ body {
 
 /* SECTION LAYOUT */
 .section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 10%;
-    flex-wrap: wrap;   /* allow stacking on small screens */
+    display: flex;               /* horizontal layout */
+    gap: 20px;                   /* space between images and text */
+    align-items: flex-start;     /* top-align images and text */
+    padding: 40px 0;
+    max-width: 1200px;           /* limits the width of the content */
+    margin: 0 auto;              /* centers the section on the page */
 }
 
 .image-group {
-    display: flex;
-    flex-direction: column; /* stack images vertically */
-    gap: 20px;
-    flex: 1; /* allow flexbox to distribute space */
+    display: flex;               /* side-by-side images */
+    flex-direction: row;
+    gap: 10px;
 }
 
 .image-group img {
-    wfloat:left;
-				width: 350px;
-				padding: 100 px;
-				display: flex;
-				flex-wrap: wrap;
-				align-items: flex-start;
-				justify-content: space-around;
-				gap: 10rem;
+    width: 250px;                /* fixed width per image */          
+    height: auto;  
 }
 
 .intro {
-    flex: 1;           /* takes remaining space */
-    max-width: 600px;  /* prevents it from being too wide */
-    font-size: 115%;
+    flex: 1;                     /* take remaining space */
+    font-size: 1.1rem;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
+    .nav-section {
+        flex-direction: column;
+    }
+
+    .nav-box {
+        width: 85%;
+        padding: 30px 0;
+        font-size: 1.6rem;
+    }
+
     .section {
-        flex-direction: column; /* stack image group + text */
-        align-items: center;
-        text-align: center;
-    }
-
-    .image-group {
-        flex-direction: row;   /* optional: images side by side on mobile */
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .image-group img {
-        max-width: 45%; /* make them smaller on phones */
+        flex-direction: column; /* stack text and images */
+        align-items: left;
+        text-align: right;
     }
 }
-
-    
 </style>
 </head>
 
@@ -108,7 +104,7 @@ body {
 
 <!-- HEADER -->
 <div class="header">
-    <img src="GH Logo.png" alt="">
+    <img src="GH header.png" alt="">
 </div>
 
 <!-- NAVIGATION -->
@@ -121,12 +117,11 @@ body {
 
 <hr>
 
-<div style="min-height: 550px; height: flex;">  
+<!-- 1997 TELE -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <div class="image-group">
-        <img src="97-tele-solo.png" alt="">
-        <img src="97-tele-multi.png" alt="">
-    </div>
+    <img src="./'97 tele solo.png"  width="350" style="height:auto;" alt="">
+    <img src="./'97 tele multi.png"  width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>1997 Fender California Series Telecaster</h1>
         <h2>Serial <span style="font-weight:normal">#AMXN721692</span></h2>
@@ -141,9 +136,10 @@ body {
 <hr>
 
 <!-- 2016 STRAT -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="Amer Pro Strat solo.png" alt="">
-    <img src="Amer Pro Strat multi.png" alt="">
+    <img src="Amer Pro Strat solo.png"  width="350" style="height:auto;" alt="">
+    <img src="Amer Pro Strat multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>2016 Fender American Professional Stratocaster</h1>
         <h2>Serial <span style="font-weight:normal">#US16076079</span></h2>
@@ -158,9 +154,10 @@ body {
 <hr>
 
 <!-- EPIPHONE SG -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="./Epiphone SG solo.png" alt="">
-    <img src="./Epiphone SG multi.png" alt="">
+    <img src="./Epiphone SG solo.png" width="350" style="height:auto;" alt="">
+    <img src="./Epiphone SG multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>2024 Epiphone SG Standard</h1>
         <h2>Serial <span style="font-weight:normal">#24071522631</span></h2>
@@ -174,9 +171,10 @@ body {
 <hr>
 
 <!-- SQUIER JAZZ BASS -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="./CV Jazz Bass Solo.png" alt="">
-    <img src="./CV Jazz Bass multi.png" alt="">
+    <img src="./CV Jazz Bass Solo.png" width="350" style="height:auto;" alt="">
+    <img src="./CV Jazz Bass multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>20XX Squier Classic Vibe '70s Jazz Bass</h1>
         <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
@@ -190,9 +188,10 @@ body {
 <hr>
 
 <!-- RICKENBACKER -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="./'87 Rick solo.png" alt="">
-    <img src="./'87 Rick multi.png" alt="">
+    <img src="./'87 Rick solo.png" width="350" style="height:auto;" alt="">
+    <img src="./'87 Rick multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>1987 Rickenbacker Model 4003</h1>
         <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
@@ -206,9 +205,10 @@ body {
 <hr>
 
 <!-- MIJ TELE -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="./Japan Tele Solo.png" alt="">
-    <img src="./Japan Tele multi.png" alt="">
+    <img src="./Japan Tele Solo.png" width="350" style="height:auto;" alt="">
+    <img src="./Japan Tele multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>2013 Fender TL-52 Telecaster Reissue MIJ</h1>
         <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
@@ -222,9 +222,10 @@ body {
 <hr>
 
 <!-- JAZZMASTER -->
+<div style="min-height: 550px; height: flex;"> 
 <div class="section">
-    <img src="./Amer Pro JM solo.png" alt="">
-    <img src="./Amer Pro JM multi.png" alt="">
+    <img src="./Amer Pro JM solo.png" width="350" style="height:auto;" alt="">
+    <img src="./Amer Pro JM multi.png" width="350" style="height:auto;" alt="">
     <div class="intro">
         <h1>2013 Fender American Professional Jazzmaster</h1>
         <h2>Serial <span style="font-weight:normal">#XXXX</span></h2>
